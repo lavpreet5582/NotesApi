@@ -7,10 +7,27 @@ This is a simple notes-api application developed using Django and Django REST Fr
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/your_username/note-taking-app.git
-cd note-taking-app
+git clone https://github.com/lavpreet5582/NotesApi.git
+cd NotesApi
 ```
-2. Install the required dependencies:
+2. Create a virtual environment (optional but recommended):
+
+```bash
+python -m venv myenv
+```
+
+3. Activate the virtual environment:
+   - On Windows:
+     ```bash
+     myenv\Scripts\activate
+     ```
+     
+   - On macOS and Linux:
+     ```bash
+     source myenv/bin/activate
+     ```
+
+4. Install the required dependencies:
 
 ```bash
 pip install -r requirements.txt
