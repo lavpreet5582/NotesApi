@@ -42,14 +42,14 @@ Use the admin interface to create users and notes.
 
 You can also access the API endpoints:
 
-User Registration: POST /signup
-User Login: POST /login
-Create new note: POST /notes/create
-Get a note: GET /notes/{id}
-Share a note: POST /notes/share
-Update a note: PUT /notes/{id}
-Get note version history: GET /notes/version-history/{id}
+- User Registration: POST /signup
+- User Login: POST /login
+- Create new note: POST /notes/create
+- Get a note: GET /notes/{id}
+- Share a note: POST /notes/share
+- Update a note: PUT /notes/{id}
+- Get note version history: GET /notes/version-history/{id}
 
 ## API Authentication
 
-The API endpoints require authentication. To authenticate, include the user's username and password in the request body for the login endpoint. After successful authentication, you will receive an authentication token that you can use to access protected endpoints by including it in the Authorization header of the request.
+- The API endpoints require authentication. To authenticate, include the user's username and password in the request body for the login endpoint. After successful authentication, you will receive an authentication token that you can use to access protected endpoints by including it in the Authorization header of the request.
