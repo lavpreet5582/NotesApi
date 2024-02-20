@@ -70,3 +70,6 @@ You can also access the API endpoints:
 ## API Authentication
 
 - The API endpoints require authentication. To authenticate, include the user's username and password in the request body for the login endpoint. After successful authentication, you will receive an authentication token that you can use to access protected endpoints by including it in the Authorization header of the request.
+
+## API Documentation
+- https://documenter.getpostman.com/view/22688263/2sA2r9VNEC
