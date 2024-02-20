@@ -1,3 +1,4 @@
+from django.utils import timezone
 from django.db import models
 from django.contrib.auth.models import User
 
@@ -11,5 +12,7 @@ class Note(models.Model):
 
 class NoteVersion(models.Model):
     note = models.ForeignKey(Note, on_delete=models.CASCADE)
-    content = models.TextField()
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    timestamp = models.DateTimeField(default=timezone.now)
+    changes = models.TextField()
     created_at = models.DateTimeField(auto_now_add=True)

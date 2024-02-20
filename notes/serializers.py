@@ -1,6 +1,7 @@
 from rest_framework import serializers
 from django.contrib.auth.models import User
 from .models import Note, NoteVersion
+from rest_framework.authtoken.models import Token
 
 class UserSerializer(serializers.ModelSerializer):
     class Meta:
@@ -25,5 +26,4 @@ class NoteSerializer(serializers.ModelSerializer):
 class NoteVersionSerializer(serializers.ModelSerializer):
     class Meta:
         model = NoteVersion
-        fields = ['id', 'note', 'content', 'created_at']
-        read_only_fields = ['note', 'created_at']
+        fields = ['timestamp', 'user', 'changes']
